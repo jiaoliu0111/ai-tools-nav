@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="一个简洁中性色调的 AI 工具导航网站模板，支持分类、搜索、精选工具和广告位。"
+    />
+    <title>AI 工具导航</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#" aria-label="AI 工具导航首页">
+          <span class="brand-mark">AI</span>
+          <span>
+            <strong>AI 工具导航</strong>
+            <small>Tools Directory</small>
+          </span>
+        </a>
+        <nav class="top-nav" aria-label="主要导航">
+          <a href="#tools">工具</a>
+          <a href="#categories">分类</a>
+          <a href="#ads">广告合作</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro-band">
+        <div class="container intro-grid">
+          <div class="intro-copy">
+            <p class="eyebrow">精选 AI 工具索引</p>
+            <h1>用更少时间找到合适的 AI 工具</h1>
+            <p class="intro-text">
+              覆盖写作、开发、图像、视频、自动化、搜索研究等高频场景，适合作为个人导航站、内容站或商业目录的起点。
+            </p>
+          </div>
+          <form class="search-panel" id="searchForm" role="search">
+            <label class="search-label" for="searchInput">搜索工具、标签或场景</label>
+            <div class="search-row">
+              <span class="search-icon" aria-hidden="true"></span>
+              <input
+                id="searchInput"
+                type="search"
+                name="q"
+                autocomplete="off"
+                placeholder="例如：写作、代码、图片、会议"
+              />
+              <button type="button" id="clearSearch" class="icon-button" aria-label="清空搜索">
+                <span aria-hidden="true"></span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="ad-band" id="ads" aria-label="顶部广告位">
+        <div class="container">
+          <a class="ad-slot ad-slot-wide ad-with-image" href="mailto:ads@example.com">
+            <img
+              class="ad-image"
+              src="./assets/ads/ai-banner.png"
+              alt="AI 芯片和神经网络抽象横幅"
+            />
+            <span class="ad-content">
+              <span class="ad-kicker">广告位</span>
+              <strong>AI 工具品牌展示</strong>
+              <span>Banner 728 x 90 · 适合新品首发、活动推广</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <section class="directory-band" id="tools">
+        <div class="container layout">
+          <aside class="sidebar" aria-label="分类筛选">
+            <div class="sidebar-section" id="categories">
+              <div class="section-heading">
+                <h2>分类</h2>
+                <span id="toolTotal">0 个工具</span>
+              </div>
+              <div class="category-list" id="categoryList"></div>
+            </div>
+
+            <a class="ad-slot ad-slot-side ad-with-image" href="mailto:ads@example.com">
+              <img
+                class="ad-image"
+                src="./assets/ads/ai-sidebar.png"
+                alt="AI 芯片电路抽象广告图"
+                loading="lazy"
+              />
+              <span class="ad-content">
+                <span class="ad-kicker">赞助位</span>
+                <strong>AI Agent 专栏</strong>
+                <span>300 x 250 · 可替换为联盟链接或表单入口</span>
+              </span>
+            </a>
+          </aside>
+
+          <div class="content">
+            <section class="featured-section" aria-labelledby="featuredTitle">
+              <div class="section-heading">
+                <h2 id="featuredTitle">精选工具</h2>
+                <span>适合放置重点推荐</span>
+              </div>
+              <div class="featured-strip" id="featuredTools"></div>
+            </section>
+
+            <section class="tool-section" aria-labelledby="allToolsTitle">
+              <div class="section-heading">
+                <h2 id="allToolsTitle">全部工具</h2>
+                <span id="resultCount">0 个结果</span>
+              </div>
+              <div class="tool-grid" id="toolGrid"></div>
+              <div class="empty-state" id="emptyState" hidden>
+                <strong>没有找到匹配工具</strong>
+                <span>换一个关键词或分类试试。</span>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 AI 工具导航</span>
+        <a href="mailto:hello@example.com">提交工具 / 广告合作</a>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
