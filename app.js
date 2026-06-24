@@ -122,6 +122,16 @@ const tools = [
     featured: false,
   },
   {
+    name: "Remio",
+    category: "productivity",
+    summary: "本地优先 AI 记忆与知识库，索引文件、网页、会议、邮件和笔记，快速找回个人上下文。",
+    tags: ["知识库", "本地优先", "效率"],
+    pricing: "免费 / 订阅",
+    url: "https://remio.ai",
+    initials: "RM",
+    featured: true,
+  },
+  {
     name: "Gamma",
     category: "productivity",
     summary: "适合快速生成演示文稿、网页式汇报和结构化提案。",
