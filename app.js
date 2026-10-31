@@ -62,6 +62,16 @@ const tools = [
     featured: false,
   },
   {
+    name: "agent-qa",
+    category: "coding",
+    summary: "网页与移动端 AI 测试，具备 memidex 持久记忆、经验证的自我改进、MCP 接入和可回看证据。",
+    tags: ["AI 测试", "MCP", "memidex"],
+    pricing: "模型费用另计",
+    url: "https://vostride.com",
+    initials: "QA",
+    featured: false,
+  },
+  {
     name: "Midjourney",
     category: "image",
     summary: "适合高质量概念图、海报视觉、风格探索和创意图像生成。",
